@@ -92,9 +92,10 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/portrait.jpg');
+      background: url('../img/portrait_updated.jpg');
       border-radius: 50%;
       border:solid 3px $secondary-color;
+      opacity: 1000;
     }
   }
 
