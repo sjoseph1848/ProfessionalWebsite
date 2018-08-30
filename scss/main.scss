@@ -133,6 +133,35 @@ main {
   }
 }
 
+//Contacts not the eye kind the ones you reach
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5 rem 2.5 rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      // the first rem makes it bigger in the padding l x w 
+      padding: 0.5rem 1.5rem; 
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      //so email does not stay yella 
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+
+  }
+}
+
+
 // Button Styles
 .btn {
   display: block;
